@@ -2,14 +2,21 @@
   "name": "@qa-task/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "e2e": "nx run cypress:e2e",
+    "e2e:debug": "nx run cypress:e2e:debug",
+    "docs": "nx run documentation:start",
+    "prettier": "prettier --write ."
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nx/js": "20.3.2",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@types/cypress": "^0.1.6",
+    "@types/mocha": "^10.0.10",
+    "dotenv": "^16.4.7",
     "nx": "20.3.2",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
