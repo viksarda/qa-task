@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress');
+import { defineConfig } from 'cypress';
 import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
@@ -12,7 +12,7 @@ module.exports = defineConfig({
     screenshotsFolder: 'screenshots',
     downloadsFolder: 'downloads',
     retries: {
-      runMode: 2,
+      runMode: Number(process.env.RETRIES) || 0,
       openMode: 0,
     },
   },

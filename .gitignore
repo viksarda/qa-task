@@ -43,3 +43,6 @@ Thumbs.db
 
 # Global variables
 .env
+
+# Cypress
+screenshots/

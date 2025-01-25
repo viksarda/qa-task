@@ -6,9 +6,9 @@ sidebar_position: 2
 
 ## [Task 1: Implement and configure NX Monorepo with Cypress and Docusaurus](https://github.com/viksarda/qa-task/pull/1) `DONE` 
 
-## Task 2: Define all of the testing scenarios and refactor all of the documentation `DONE`
+## [Task 2: Define all of the testing scenarios and refactor all of the documentation](https://github.com/viksarda/qa-task/pull/2) `DONE`
 
-## Task 3: Implement homepage spec
+## Task 3: Implement homepage spec `DONE`
 
 ## Task 4: Implement product spec
 

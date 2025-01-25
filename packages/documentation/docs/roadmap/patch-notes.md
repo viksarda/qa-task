@@ -43,4 +43,34 @@ Now you should be able to open the documentation and execute Cypress tests
 
 ## Task 2 (25.1.25)
 
-### 
+### Define all of the testing scenarios and refactor all of the documentation
+
+#### Description
+
+PR changes consist of updating all of the documentation in docusaurus as well as implementing all of the core test scenarios for the application. Along side:
+- Removing CI/CD script (temporarily)
+
+#### Instructions
+
+To see the documentation and scenarios, run:
+
+- `npm run docs` (Build and serve documentation)
+
+---
+
+## Task 3 (25.1.25)
+
+### Implement homepage spec
+
+#### Description
+
+PR changes consist of implementing the homepage spec. Along side:
+- Added `homepageCommands.ts` helper
+- Added `products.ts` containing information of the products
+- Updated `.env` file to include number of retries for failing tests
+
+#### Instructions
+
+To run the spec, run:
+
+- `npm run e2e`
