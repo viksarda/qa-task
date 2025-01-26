@@ -16,3 +16,5 @@
 // Import commands.js using ES2015 syntax:
 
 import '../support/homepageCommands';
+import '../support/productCommands';
+import '../support/myCartCommands';

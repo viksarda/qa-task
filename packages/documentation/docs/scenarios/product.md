@@ -70,7 +70,7 @@ Product should be added to cart with the correct color option
 
 ### Precondition
 
-Visit `https://academybugs.com/store/denim-coat/`
+Visit `https://academybugs.com/store`
 
 
 ### Descripton
@@ -81,13 +81,14 @@ Check if the user is able to post a comment on a product
 
 ```mermaid
 graph TD;
-    id1(Click on 'Comment' input field)-->id2(Type 'Example Comment')
-    id2-->id3(Click on 'Name' Input field)
-    id3-->id4(Type 'John')
-    id4-->id5(Click on 'Email' Input field)
-    id5-->id6(Type 'tester@gmail')
-    id6-->id7(Click on 'Post Comment' button)
-    id7-->id8(Check if comment is successfully posted)
+    id1(Click the image on the first product)-->id2(Click on 'Comment' input field)
+    id2-->id3(Type 'Example Comment')
+    id3-->id4(Click on 'Name' Input field)
+    id4-->id5(Type 'John')
+    id5-->id6(Click on 'Email' Input field)
+    id6-->id7(Type 'tester@gmail')
+    id7-->id8(Click on 'Post Comment' button)
+    id8-->id9(Check if comment is successfully posted)
 
     style id8 fill:#5AE48D,color:#000000
 ```

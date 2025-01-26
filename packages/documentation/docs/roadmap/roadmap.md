@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## [Task 2: Define all of the testing scenarios and refactor all of the documentation](https://github.com/viksarda/qa-task/pull/2) `DONE`
 
-## Task 3: Implement homepage spec `DONE`
+## [Task 3: Implement homepage spec](https://github.com/viksarda/qa-task/pull/3) `DONE`
 
 ## Task 4: Implement product spec
 

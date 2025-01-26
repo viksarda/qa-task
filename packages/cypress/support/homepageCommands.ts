@@ -1,5 +1,3 @@
-import { products } from '../fixtures/products';
-
 declare global {
   namespace Cypress {
     interface Chainable {
@@ -7,7 +5,7 @@ declare global {
       getResultCount(value: number): Chainable<void>;
       clickSortDropdownOption(option: string): Chainable<void>;
       getFirstProduct(): Chainable<void>;
-      getProduct(productName: keyof typeof products): Chainable<void>;
+      getProduct(productName: string): Chainable<void>;
       clickCurrencyOption(option: string): Chainable<void>;
       getProductSerchInput(): Chainable<void>;
       clickSearchButton(): Chainable<void>;
@@ -27,11 +25,15 @@ Cypress.Commands.add('getResultCount', (value) => {
 });
 
 Cypress.Commands.add('clickSortDropdownOption', (value) => {
-  cy.get('select#sortfield').select(value); // By visible text
+  cy.get('select#sortfield').select(value);
 });
 
 Cypress.Commands.add('getFirstProduct', () => {
-  cy.get('h3[class="ec_product_title_type1"]').first(); // Use dynamic name
+  cy.get('h3[class="ec_product_title_type1"]').first();
+});
+
+Cypress.Commands.add('getProduct', (productName) => {
+  cy.get('h3[class="ec_product_title_type1"]').contains(productName);
 });
 
 Cypress.Commands.add('clickCurrencyOption', (option) => {
@@ -43,7 +45,9 @@ Cypress.Commands.add('getProductSerchInput', () => {
 });
 
 Cypress.Commands.add('clickSearchButton', () => {
-  cy.get('input[type="submit"]').click();
+  cy.get('div[class="ec_search_widget"]').within(() => {
+    cy.get('input[type="submit"]').click();
+  });
 });
 
 Cypress.Commands.add('clickFilterByPriceOption', (option) => {

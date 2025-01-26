@@ -74,3 +74,22 @@ PR changes consist of implementing the homepage spec. Along side:
 To run the spec, run:
 
 - `npm run e2e`
+
+---
+
+## Task 4 (26.1.25)
+
+### Implement product spec
+
+#### Description
+
+PR changes consist of implementing the product spec. Along side:
+- Added `productCommands.ts` and `myCartCommands.ts` helpers
+- Updated and added new fixtures
+- Updated a the `Post a comment on a product` scenario to match the rest in the category
+
+#### Instructions
+
+To run the spec, run:
+
+- `npm run e2e`
