@@ -1,18 +1,22 @@
 export const products = {
-  FlamingoTShirt: {
+  flamingoTShirt: {
     name: 'Flamingo Tshirt',
     price: 15.14,
   },
-  DNKYellowShoes: {
+  dnkYellowShoes: {
     name: 'DNK Yellow Shoes',
-    price: 45.00,
+    price: 45.0,
   },
-  BrightGoldPurseWithChain: {
+  brightGoldPurseWithChain: {
     name: 'Bright Gold Purse With Chain',
     price: 124.53,
   },
-  BlackOverTheShoulderHandbag: {
+  blackOverTheShoulderHandbag: {
     name: 'Black Over-the-shoulder Handbag',
-    price: 478.00,
+    price: 478.0,
+  },
+  denimCoat: {
+    name: 'Denim Coat',
+    price: 109.95,
   },
 };
