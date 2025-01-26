@@ -10,6 +10,7 @@ declare global {
       getProductSerchInput(): Chainable<void>;
       clickSearchButton(): Chainable<void>;
       clickFilterByPriceOption(option: string): Chainable<void>;
+      clickViewCartButton(): Chainable<void>;
     }
   }
 }
@@ -52,4 +53,8 @@ Cypress.Commands.add('clickSearchButton', () => {
 
 Cypress.Commands.add('clickFilterByPriceOption', (option) => {
   cy.get('div[class="ec_pricepoint_widget"]').contains(option).click();
+});
+
+Cypress.Commands.add('clickViewCartButton', () => {
+  cy.get('div[class="ec_product_added_to_cart"]').contains('View Cart').click();
 });

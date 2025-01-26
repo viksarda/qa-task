@@ -93,3 +93,21 @@ PR changes consist of implementing the product spec. Along side:
 To run the spec, run:
 
 - `npm run e2e`
+
+---
+
+## Task 5 (26.1.25)
+
+### Implement my-cart spec
+
+#### Description
+
+PR changes consist of implementing the my-cart spec. Along side:
+- Refactoring fixtures and adding new ones
+- Updated some scenarios for better coverage
+
+#### Instructions
+
+To run the spec, run:
+
+- `npm run e2e`

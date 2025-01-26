@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## [Task 3: Implement homepage spec](https://github.com/viksarda/qa-task/pull/3) `DONE`
 
-## Task 4: Implement product spec
+## [Task 4: Implement product spec](https://github.com/viksarda/qa-task/pull/4) `DONE`
 
 ## Task 5: Implement my-cart spec
 

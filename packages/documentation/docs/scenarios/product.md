@@ -90,7 +90,7 @@ graph TD;
     id7-->id8(Click on 'Post Comment' button)
     id8-->id9(Check if comment is successfully posted)
 
-    style id8 fill:#5AE48D,color:#000000
+    style id9 fill:#5AE48D,color:#000000
 ```
 
 ### Result
