@@ -28,12 +28,14 @@ describe('Homepage', () => {
   it('Should search for a product', () => {
     cy.getProductSerchInput().type('Chain');
     cy.clickSearchButton();
+
     cy.getResultCount(1);
     cy.getFirstProduct().contains(products.brightGoldPurseWithChain.name);
   });
 
   it('Should filter the products by price', () => {
     cy.clickFilterByPriceOption('Greater Than $299.99');
+
     cy.getResultCount(1);
     cy.getFirstProduct().contains(products.blackOverTheShoulderHandbag.name);
   });

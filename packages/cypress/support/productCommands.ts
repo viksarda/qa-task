@@ -1,4 +1,4 @@
-import { replies } from "../fixtures/replies";
+import { forms } from '../fixtures/forms';
 
 declare global {
   namespace Cypress {
@@ -10,7 +10,6 @@ declare global {
       clickColourOptionButton(value: string): Chainable<void>;
       fillReplySection(): Chainable<void>;
       clickPostCommentButton(): Chainable<void>;
-
     }
   }
 }
@@ -42,9 +41,9 @@ Cypress.Commands.add('clickColourOptionButton', (value) => {
 });
 
 Cypress.Commands.add('fillReplySection', () => {
-  cy.get('#comment').type(replies.exampleReply.comment);
-  cy.get('#author').type(replies.exampleReply.name);
-  cy.get('#email').type(replies.exampleReply.email);
+  cy.get('#comment').type(forms.productReply.comment);
+  cy.get('#author').type(forms.productReply.name);
+  cy.get('#email').type(forms.productReply.email);
 });
 
 Cypress.Commands.add('clickPostCommentButton', () => {

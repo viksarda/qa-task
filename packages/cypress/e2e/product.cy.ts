@@ -7,9 +7,11 @@ describe('Product', () => {
 
   it('Should add multiple items to cart', () => {
     cy.getFirstProduct().click();
+
     cy.clickIncreaseQuantityButton(1);
     cy.getQuantityInputField().should('have.value', '2');
     cy.clickAddToCartButton();
+
     cy.getQuantityInputField().should('have.value', '2');
   });
 
@@ -22,18 +24,19 @@ describe('Product', () => {
     cy.clickColourOptionButton('Green');
     cy.getColourValue('Green');
     cy.clickAddToCartButton();
-    cy.getProductInCart(products.denimCoat.name)
-    .parent('td')
-    .contains('Green')
+    cy.getProductInCart(products.denimCoat.name).parent('td').contains('Green');
   });
 
   // Test will fail because of a bug in the application
   it('Should add a comment on a product', () => {
     cy.getFirstProduct().click();
+
     cy.fillReplySection();
     cy.clickPostCommentButton();
     //Step below fails the test due to an intentional bug
-    cy.get('div[class="academy-bug-info-overlay"]').should('not.contain.text', "crash")
-
+    cy.get('div[class="academy-bug-info-overlay"]').should(
+      'not.contain.text',
+      'crash'
+    );
   });
 });

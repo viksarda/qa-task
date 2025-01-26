@@ -21,8 +21,8 @@ Check if user is able to purchase an item
 
 ```mermaid
 graph TD;
-    id1(Click 'Add to cart' button on first product )-->id2(Wait for 'Checkout now' button to appear)
-    id2-->id3(Click on 'Checkout now' button)
+    id1(Click 'Add to cart' button on 'DNK Yellow Shoes')-->id2(Wait for 'View Cart' button to appear)
+    id2-->id3(Click on 'View Cart' button)
     id3-->id4(Click on 'Checkout' button)
     id4-->id5(Fill out shipping information)
     id5-->id6(Click on 'Continue to shipping' button)
@@ -56,8 +56,8 @@ Check if user is able to update the quantity of an item after added to cart and 
 
 ```mermaid
 graph TD;
-    id1(Click 'Add to cart' button on first product )-->id2(Wait for 'Checkout now' button to appear)
-    id2-->id3(Click on 'Checkout now' button)
+    id1(Click 'Add to cart' button on 'DNK Yellow Shoes')-->id2(Wait for 'View Cart' button to appear)
+    id2-->id3(Click on 'View Cart' button)
     id3-->id4(Check if cart subtotal value equals the price of the product)
     id4-->id5(Click on '+' button)
     id5-->id6(Check if quantity value equals '2')
@@ -91,8 +91,8 @@ Check if the user is able to remove a product from the cart
 
 ```mermaid
 graph TD;
-    id1(Click 'Add to cart' button on first product)-->id2(Wait for 'Checkout now' button to appear)
-    id2-->id3(Click on 'Checkout now' button)
+    id1(Click 'Add to cart' button on 'DNK Yellow Shoes')-->id2(Wait for 'View Cart' button to appear)
+    id2-->id3(Click on 'View Cart' button)
     id3-->id4(Check if one product is visible in the cart)
     id3-->id5(Click on 'X' button)
     id5-->id6(Check if 'There are no items in your cart' message appears)
