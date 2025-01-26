@@ -63,4 +63,29 @@ One the build finishes and is served, you can visit `localhost:3000` to access t
 NOTE: If the port `3000` is already allocated, it will change the port and inform you in console how to access the documentation.
 
 
-## Docker (TODO)
+## Docker
+
+[Docker](https://docs.docker.com/) is an excellent tool that allows any application to run on any machine.
+To start using docker, you will need to install the [docker engine](https://docs.docker.com/engine/install/), as well as [docker compose](https://docs.docker.com/compose/install/).
+
+NOTE: MAC USERS CAN SIMPLIFY THIS BY INSTALLING ONLY DOCKER DESKTOP
+
+I have simplified the scripts inside the newly added `Makefile`
+
+To first build up the containers, run:
+
+```sh
+make up
+```
+
+Once the container has been built, you can now run the e2e tests inisde the container:
+
+```sh
+make e2e
+```
+
+You can see the full extent of the scripts to help you work with docker, simply run
+
+```sh
+cat Makefile
+```

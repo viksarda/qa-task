@@ -1,0 +1,15 @@
+services:
+  cypress:
+    build:
+      context: .
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - cypress-cache:/root/.cache/Cypress
+    environment:
+      - CYPRESS_baseUrl=${BASE_URL}
+      - DISPLAY=:99
+volumes:
+  cypress-cache:

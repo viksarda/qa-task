@@ -6,8 +6,6 @@ sidebar_position: 1
 
 This page is dedicated to keep track of changes
 
----
-
 ## Task 1 (24.1.25)
 
 ### Add initial project structure with documentation and Cypress
@@ -39,8 +37,6 @@ Now you should be able to open the documentation and execute Cypress tests
 - `npm run docs` (Build and serve documentation)
 - `npm run e2e` (Execute E2E tests)
 
----
-
 ## Task 2 (25.1.25)
 
 ### Define all of the testing scenarios and refactor all of the documentation
@@ -55,8 +51,6 @@ PR changes consist of updating all of the documentation in docusaurus as well as
 To see the documentation and scenarios, run:
 
 - `npm run docs` (Build and serve documentation)
-
----
 
 ## Task 3 (25.1.25)
 
@@ -75,8 +69,6 @@ To run the spec, run:
 
 - `npm run e2e`
 
----
-
 ## Task 4 (26.1.25)
 
 ### Implement product spec
@@ -94,7 +86,6 @@ To run the spec, run:
 
 - `npm run e2e`
 
----
 
 ## Task 5 (26.1.25)
 
@@ -111,3 +102,24 @@ PR changes consist of implementing the my-cart spec. Along side:
 To run the spec, run:
 
 - `npm run e2e`
+
+## Task 6 (26.1.25)
+
+### Containerize the solution using docker
+
+#### Description
+
+PR changes consist of adding a `Dockerfile` and `docker-compose.yml` files which allows the e2e tests to be run inside the container. As well as:
+- Added a new `Makefile` that helps running docker commands
+
+#### Instructions
+
+To start using docker, you will need to install the [docker engine](https://docs.docker.com/engine/install/), as well as [docker compose](https://docs.docker.com/compose/install/).
+
+Once you have successfully installed the requirements, you can run
+
+- `make up`
+
+If the container was built successfully, you can now freely run the e2e tests inside the container:
+
+- `make e2e`
