@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## [Task 4: Implement product spec](https://github.com/viksarda/qa-task/pull/4) `DONE`
 
-## Task 5: Implement my-cart spec
+## [Task 5: Implement my-cart spec](https://github.com/viksarda/qa-task/pull/5) `DONE`
 
 ## Task 6: Containerize the solution (Docker)
 
