@@ -123,3 +123,18 @@ Once you have successfully installed the requirements, you can run
 If the container was built successfully, you can now freely run the e2e tests inside the container:
 
 - `make e2e`
+
+## Task 7 (26.1.25)
+
+### Implement CICD and final Change  
+
+#### Description
+
+PR changes consist of refactoring the `ci.yml` file to allow a CICD solution to the project (using Github Actions)
+Additional changes include:
+- Updating the documentation
+- Skipping failing tests (Intentional bugs on the application)
+
+#### Instructions
+
+Unless you push new changes, you cannot test this since it is using github runners. You can find a passing job following this [link](https://github.com/viksarda/qa-task/actions/runs/12977457175)

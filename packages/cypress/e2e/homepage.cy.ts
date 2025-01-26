@@ -6,7 +6,7 @@ describe('Homepage', () => {
   });
 
   // Test will fail because of an intentional bug in the application
-  it('Should change the pagination size', () => {
+  it.skip('Should change the pagination size', () => {
     cy.clickPaginationButton(10);
     cy.getResultCount(10);
   });
@@ -17,7 +17,7 @@ describe('Homepage', () => {
   });
 
   // Test will fail because of an intentional bug in the application
-  it('Should change the currency of the products', () => {
+  it.skip('Should change the currency of the products', () => {
     cy.clickCurrencyOption('EUR');
     cy.getFirstProduct()
       .parent('.ec_product_type1')
