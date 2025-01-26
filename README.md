@@ -68,7 +68,7 @@ NOTE: If the port `3000` is already allocated, it will change the port and infor
 [Docker](https://docs.docker.com/) is an excellent tool that allows any application to run on any machine.
 To start using docker, you will need to install the [docker engine](https://docs.docker.com/engine/install/), as well as [docker compose](https://docs.docker.com/compose/install/).
 
-NOTE: MAC USERS CAN SIMPLIFY THIS BY INSTALLING ONLY DOCKER DESKTOP
+NOTE: MAC AND WINDOWS USERS CAN SIMPLIFY THIS BY INSTALLING ONLY DOCKER DESKTOP
 
 I have simplified the scripts inside the newly added `Makefile`
 
